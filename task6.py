@@ -20,10 +20,9 @@ def comeback(rotor, transit, pos):
     j = 0
     for k in rotor:
         if transit[pos] == k:
-            pos = j
             break
         j += 1
-    return pos
+    return j
 
 def rotate(rotor):
     result = rotor[1:] + rotor[0:1]
@@ -31,14 +30,11 @@ def rotate(rotor):
 
 def prettyOutput(crypted):
     i = 0
-    j = 0
     result = ""
     while i < len(crypted):
         if i != 0 and i%5 == 0:
             result += " "
-            j += 1
         result += crypted[i]
-        j += 1
         i += 1
     return result
 
@@ -66,6 +62,7 @@ def enigma():
         pos = comeback(rotors[data.rotor2 - 1], alphabet, pos)
         pos = comeback(rotors[data.rotor1 - 1], alphabet, pos)
         data.crypted += alphabet[pos]
+        rotors[data.rotor1] = rotate(rotors[data.rotor1 - 1])
         if firstLetter == False:
             if rotors[data.rotor1 - 1][0] == rotateRotor1:
                 rotors[data.rotor2 - 1] = rotate(rotors[data.rotor2 - 1])

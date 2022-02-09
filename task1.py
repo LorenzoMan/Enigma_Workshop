@@ -7,11 +7,14 @@ alphabet ="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 class Data:
     def __init__(self):
-        self.rotor1 = int(input("Enter the first rotor: "))
-        self.rotor2 = int(input("Enter the second rotor: "))
-        self.rotor3 = int(input("Enter the third rotor: "))
-        self.offset1 = int(input("Enter the offset of the first rotor: "))
-        self.offset2 = int(input("Enter the offset of the second rotor: "))
-        self.offset3 = int(input("Enter the offset of the third rotor: "))
-        self.encrypt = str(input("Enter the message to encrypt: "))
-        self.crypted = ""
+        self.rotor1 = 
+        self.rotor2 = 
+        self.rotor3 = 
+        self.offset1 = 
+        self.offset2 =
+        self.offset3 = 
+        self.encrypt = 
+        self.crypted = 
+
+if __name__=="__main__":
+    enigma()

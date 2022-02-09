@@ -18,12 +18,12 @@ class Data:
 
 def enigma():
     data = Data()
-    temp1 = rotors[data.rotor1 - 1][data.offset1 :] + rotors[data.rotor1 - 1][0: data.offset1]
-    temp2 = rotors[data.rotor2 - 1][data.offset2 :] + rotors[data.rotor2 - 1][0: data.offset2]
-    temp3 = rotors[data.rotor3 - 1][data.offset3 :] + rotors[data.rotor3 - 1][0: data.offset3]
-    rotors[0] = temp1
-    rotors[1] = temp2
-    rotors[2] = temp3
+    temp1 = #trouver le moyen de faire passer le nombre de caractères correspondant a l'offset à la fin de la string
+    temp2 = 
+    temp3 = 
+    rotors[0] = 
+    rotors[1] = 
+    rotors[2] = 
 
 if __name__=="__main__":
     enigma()

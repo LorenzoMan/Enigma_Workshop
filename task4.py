@@ -20,10 +20,9 @@ def comeback(rotor, transit, pos):
     j = 0
     for k in rotor:
         if transit[pos] == k:
-            pos = j
             break
         j += 1
-    return pos
+    return j
 
 def enigma():
     data = Data()
